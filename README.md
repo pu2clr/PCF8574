@@ -44,8 +44,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 This library uses the I²C communication protocol and implements most important functions offered by PCF8574 device from MicroChip. It also has primitive functions that make it easier to implement commands that may not have been implemented yet. The main features implemented can be seen below:
 
-* GPIO individual control (8 I/O pins)
-* I²C address customization (?????)
+* GPIO/PORT individual control (8 I/O pins)
+* I²C address customization (from 0x20 to 0x27)
 * Internal Interrupt feature setup
 
 

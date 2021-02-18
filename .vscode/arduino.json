@@ -1,0 +1,5 @@
+{
+    "board": "arduino:avr:nano",
+    "configuration": "cpu=atmega328",
+    "sketch": "examples/poc_01/poc_01.ino"
+}

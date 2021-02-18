@@ -17,20 +17,19 @@
 
 #define DEFAULT_I2C_ADDRESS 0x20 // Default I2C Address
 
-#define MCP_GPIO0 0
-#define MCP_GPIO1 1
-#define MCP_GPIO2 2
-#define MCP_GPIO3 3
-#define MCP_GPIO4 4
-#define MCP_GPIO5 5
-#define MCP_GPIO6 6
-#define MCP_GPIO7 7
+#define PCF_GPIO0 0
+#define PCF_GPIO1 1
+#define PCF_GPIO2 2
+#define PCF_GPIO3 3
+#define PCF_GPIO4 4
+#define PCF_GPIO5 5
+#define PCF_GPIO6 6
+#define PCF_GPIO7 7
 
 #define CHECK_BIT_HIGH(x, y) (x & (1 << y)) //!< Check if a bit is high. Returns 0 or != 0
 
 class PCF
 {
-
 protected:
    uint8_t i2c_address = DEFAULT_I2C_ADDRESS; //!< Default i2c address
    int reset_pin = -1;                        //!< Digital Arduino pin to control the PCF8574 RESET

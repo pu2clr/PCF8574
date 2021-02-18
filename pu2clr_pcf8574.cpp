@@ -62,7 +62,7 @@ void PCF::setup(uint8_t i2c)
 uint8_t PCF::read()
 {
     this->io_error = false;
-    Wire.requestFrom(this->i2c_address, 1);
+    Wire.requestFrom((int) this->i2c_address, 1);
     if (!Wire.available()) this->io_error =  true;
     return Wire.read();
 }

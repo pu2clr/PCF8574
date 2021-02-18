@@ -104,3 +104,4 @@ void PCF::digitalWrite(uint8_t port, uint8_t value) {
     uint8_t currentPorts = this->read();
     this->write((currentPorts & ~(1 << port)) | (value << port));
 }
+

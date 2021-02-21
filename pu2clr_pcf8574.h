@@ -39,7 +39,6 @@ public:
    uint8_t lookForDevice();
    void reset();
    void setup(uint8_t i2c = DEFAULT_I2C_ADDRESS);
-   uint8_t getRegister(uint8_t reg);
    void write(uint8_t value);
    uint8_t read();
    uint8_t digitalRead(uint8_t port);

@@ -45,6 +45,7 @@ public:
    void digitalWrite(uint8_t port, uint8_t value);
 
    /**
+    * @ingroup group01
     * @brief Returns the last wrire or read status
     * @details Return false when the last read or write operation is not ok 
     * @return true or false

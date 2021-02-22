@@ -83,8 +83,8 @@ void PCF::write(uint8_t value)
     if (error != 0) this->io_error = true;
 }
 
-
 /**
+ * @ingroup group01
  * @brief Reads a given port content (HIGH or LOW)
  * @details Returns the value or the bit in a given pin (port)
  * @param port 

@@ -51,7 +51,7 @@ PROJECT_BRIEF          = "Arduino Library for PCF8574 Device - By Ricardo Lima C
 # pixels and the maximum width should not exceed 200 pixels. Doxygen will copy
 # the logo to the output directory.
 
-PROJECT_LOGO           = /Users/rcaratti/Desenvolvimento/eu/Arduino/PU2CLR_PCF8574/extras/images/logo.png
+PROJECT_LOGO           = /Users/rcaratti/Desenvolvimento/eu/Arduino/PU2CLR_PCF8574T/PCF8574/extras/images/logo.png
 
 # The OUTPUT_DIRECTORY tag is used to specify the (relative or absolute) path
 # into which the generated documentation will be written. If a relative path is

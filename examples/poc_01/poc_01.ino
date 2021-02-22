@@ -22,6 +22,7 @@ void setup()
     }
     
     pcf.setup(i2cAddr); // Starts the device with the found I2C address
+
 }
 
 void loop()
@@ -32,7 +33,7 @@ void loop()
     {
         pcf.write(0B00001111); // Turns ports 0, 1, 2 and 3 HIGH
         delay(1000);           // Time to mensure the device ports (pins)
-        pcf.write(0B00000000);  // Turns ports 0, 1, 2 and 3 LOW
+        pcf.write(0B00000000); // Turns ports 0, 1, 2 and 3 LOW
         delay(1000);           // Time to mensure the device ports (pins)
     }
     Serial.print("\nHandling ports 0, 1, 2 and 3 one by one");

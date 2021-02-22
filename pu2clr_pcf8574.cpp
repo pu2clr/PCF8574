@@ -95,6 +95,7 @@ uint8_t PCF::digitalRead(uint8_t port) {
 }
 
 /**
+ * @ingroup group01
  * @brief Writes HIGH or LOW in a given port (pin)
  * @details Turns a given port High or LOW
  * @param port 

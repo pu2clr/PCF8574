@@ -5,5 +5,6 @@ var group__group01 =
     [ "setup", "group__group01.html#gaa82dedfda18287bd2dd32dc28f73e69e", null ],
     [ "read", "group__group01.html#gacce5891bfdce19944b7b0859e5e739ba", null ],
     [ "write", "group__group01.html#ga85a685c9623a84a5c924762963c635b3", null ],
-    [ "digitalRead", "group__group01.html#gaca2dae7a91c98c4b9bb009709dd1179f", null ]
+    [ "digitalRead", "group__group01.html#gaca2dae7a91c98c4b9bb009709dd1179f", null ],
+    [ "digitalWrite", "group__group01.html#gaaaad79a637bf70a5a8cb60ca457c9e82", null ]
 ];

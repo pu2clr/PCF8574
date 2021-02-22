@@ -1,8 +1,5 @@
 # [PU2CLR - PCF8574 Arduino Library](https://pu2clr.github.io/PCF8574/)
 
-![UNDER CONSTRUCTION...](extras/images/under_construction.png)
-
-
 It is an Arduino Library to control the PCF8574 8-Bit I/O Expander. 
 
 The PCF8574 device provides 8-bit, general purpose, parallel I/O expansion. It can be controlled via I²C bus applications. It is a great and inexpensive device that allow you to add more peripherals to be controlled by your Arduino board via I²C protocol.

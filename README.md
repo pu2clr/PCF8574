@@ -18,10 +18,11 @@ This Arduino library implements the most important functions available on PCF857
 3. [Labrary Features](https://pu2clr.github.io/PCF8574/#labrary-features)
 4. [Library Installation](https://pu2clr.github.io/PCF8574/#library-installation)
 5. [Other Arduino Libraries developed by the Author](https://pu2clr.github.io/PCF8574/)
-6. [Basic Schematic](https://pu2clr.github.io/PCF8574/#basic-schematic)
-7. [Internal Interrupt setup](https://pu2clr.github.io/PCF8574/#internal-interrupt-setup) 
-8.  [PCF8574 reset control](https://pu2clr.github.io/PCF8574/#PCF8574-reset-control)
-9.  [References](https://pu2clr.github.io/PCF8574/#references)
+6. [API documentation](https://pu2clr.github.io/MCP23008/extras/apidoc/html/)
+7. [Basic Schematic](https://pu2clr.github.io/PCF8574/#basic-schematic)
+8. [Internal Interrupt setup](https://pu2clr.github.io/PCF8574/#internal-interrupt-setup) 
+9.  [PCF8574 reset control](https://pu2clr.github.io/PCF8574/#PCF8574-reset-control)
+10. [References](https://pu2clr.github.io/PCF8574/#references)
 
 
 ## MIT License 

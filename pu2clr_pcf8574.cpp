@@ -91,7 +91,7 @@ void PCF::write(uint8_t value)
  * @return uint8_t 
  */
 uint8_t PCF::digitalRead(uint8_t port) {
-    return this->read() & (1 << port);
+    return ((this->read() & (1 << port) ) > 0 )? HIGH:0 ;
 }
 
 /**

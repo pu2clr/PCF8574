@@ -43,4 +43,12 @@ public:
    uint8_t read();
    uint8_t digitalRead(uint8_t port);
    void digitalWrite(uint8_t port, uint8_t value);
+
+   /**
+    * @brief Returns the last wrire or read status
+    * @details Return false when the last read or write operation is not ok 
+    * @return true or false
+    */
+   inline bool error(){return this->io_error;};
 };
+

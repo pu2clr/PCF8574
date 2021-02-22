@@ -1,11 +1,29 @@
 
 /**
- * This sketch uses an LED connected to the +VCC via a 1K resistor. 
- * When the port 0 is HIGH, the LED turns OFF; When the port 0 is LOW, the LED turns ON. 
+ * This sketch uses two LEDs connected to the +VCC via a 1K resistor. 
+ * When the ports the the LEDs are  HIGH, the LED turns OFF; When the ports are LOW, the LED turns ON. 
+ * This sketch detects the I2C bus address automatically. See the Serial Monitor to check that.
+ * 
+ *   Circuit Arduino and PCF8574 setup
+ *
+ *  | Device   | PCF8574  | Description                               |
+ *  | -------- | -------- | ----------------------------------------- |
+ *  | Arduino  |          |                                           |
+ *  |    A5    | SCL (14) | I2C Clock                                 |
+ *  |    A4    | SDA (15) | I2C Data                                  |
+ *  | -------- |          |                                           |
+ *  | L E D s  |          |                                           |
+ *  |  LED 0   |  PORT 0  | LED eonnected to the +VCC via 1K resistor |
+ *  |  LED 1   |  PORT 1  | LED eonnected to the +VCC via 1K resistor |
+ * 
+ * 
+ *  Author: Ricardo LIma Caratti, 2021
+ * 
  */
 #include <pu2clr_pcf8574.h>
 
-#define LED_PIN 0
+#define LED1 0
+#define LED2 1
 
 PCF pcf;
 
@@ -29,17 +47,22 @@ void setup()
     }
     
     pcf.setup(i2cAddr); // Starts the device with the found I2C address
-    pcf.write(0B11111110); // Sets all ports to HIGH. Except port 0.
-    delay(5000);
-    pcf.digitalWrite(LED_PIN,HIGH);
-    delay(5000);
+
 
 }
 
 void loop()
 {
-  pcf.digitalWrite(LED_PIN,LOW); 
+  // Turns the LEDS ON
+  pcf.digitalWrite(LED1,LOW);
+  delay(250);
+  pcf.digitalWrite(LED2,LOW);
+  
   delay(500);
-  pcf.digitalWrite(LED_PIN,HIGH);
+  // Turns the LEDs OFF
+  pcf.digitalWrite(LED1,HIGH);
+  delay(250);
+  pcf.digitalWrite(LED2,HIGH);
+  
   delay(1000); 
 }

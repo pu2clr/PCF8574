@@ -2,7 +2,7 @@
 /**
  * This sketch uses an LED connected to the +VCC via a 1K resistor and the PFC8574 port 0. 
  * When the port 0 is HIGH, the LED turns OFF; When the port 0 is LOW, the LED turns ON. Also an interrupt will be fied.
- * When any port goes to LOW (via a button for example), an interrupt will be fired and a message will appear on Serial MOnitor (console)
+ * When any port goes to LOW (via a button for example), an interrupt will be fired and a message will appear on Serial Monitor (console)
  * 
  * Author: Ricardo Lima Caratti.
  * 
@@ -68,14 +68,13 @@ void loop()
     Serial.print(interrupt_count);
     // Checks what port is LOW
     for ( uint8_t i = 0; i < 8; i++) {
-      uint8_t port;
-      port = pcf.digitalRead(i);
-      if ( port == LOW ) {
+      if ( pcf.digitalRead(i) == LOW ) {
         Serial.print(" - the port LOW is ");
         Serial.println(i);
         break;
       }
     }
+    
     pcf_event = false; // Cleans the interrupt status
   }
 }

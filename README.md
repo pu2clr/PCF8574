@@ -115,42 +115,18 @@ The image below shows a basic PCF8574 application with LEDs and Buttons. You can
 ![PCF8574 Arduino setup and circuit](extras/images/basic_schematic.png)
 
 
-
-### GPIO as output setup
-
-
-
-
-#### Arduino setup suggestion
-
-
-
-#### Output setup example
-
-
-
-### GPIO as input setup
-
-
-![Basic Schematic with LEDs](extras/images/basic_schematic_input.png)
-
-
-#### Arduino setup suggestion
-
-
-
-### GPIO as input and output setup
-
-
-
 ## Prototype 
 
+The prototype below implements the circuit above.
 
-## Internal Interrupt setup
+![PCF8574 prototype](extras/images/PCF8574_PROTOTYPE.png)
 
 
+## Interrupt setup
 
-## PCF8574 reset control
+Every time a port changes its status, PCF8574 sets the INT pin to a low logic level (0). 
+You can use it to deal with Arduino interrupts. 
+
 
 
 

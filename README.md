@@ -110,7 +110,11 @@ Do you need some old version (release) of this library?  If yes, [check here](ht
 
 ## Basic schematic
 
-The image below shows a basic PCF8574 application with LED. You can control up to 8 LEDs. The I²C bus address is set to 0x20. You can select another I²C address by dealing with the A0,A1 and A2 pins (from ????). This circuit uses the PCF8574 GPIO PINs as output.   
+The image below shows a basic PCF8574 application with LEDs and Buttons. You can control up to 8 LEDs or 8 buttons or a mix of them with this device. The I²C bus address is set to 0x20. You can select another I²C address by dealing with the A0,A1 and A2 pins (from 0x20 to 0x27). This circuit uses two LEDs connected to the ports P0 and P1 and the buttons connected to the port P4 to P7. All examples sketch use this setup. 
+
+![PCF8574 Arduino setup and circuit](extras/images/basic_schematic.png)
+
+
 
 ### GPIO as output setup
 

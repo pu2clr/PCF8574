@@ -96,6 +96,9 @@ $(document).ready(function(){initNavTree('group__group01.html',''); initResizabl
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:gaed902e8d7d43de9eab1cc71a0b71f7f8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group01.html#gaed902e8d7d43de9eab1cc71a0b71f7f8">PCF::error</a> ()</td></tr>
+<tr class="memdesc:gaed902e8d7d43de9eab1cc71a0b71f7f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the last wrire or read status.  <a href="group__group01.html#gaed902e8d7d43de9eab1cc71a0b71f7f8">More...</a><br /></td></tr>
+<tr class="separator:gaed902e8d7d43de9eab1cc71a0b71f7f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabb38aa941e8b607557fa8f3f98bf9fc5"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group01.html#gabb38aa941e8b607557fa8f3f98bf9fc5">PCF::lookForDevice</a> ()</td></tr>
 <tr class="memdesc:gabb38aa941e8b607557fa8f3f98bf9fc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Look for PCF8574 device I2C Address.  <a href="group__group01.html#gabb38aa941e8b607557fa8f3f98bf9fc5">More...</a><br /></td></tr>
 <tr class="separator:gabb38aa941e8b607557fa8f3f98bf9fc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -108,6 +111,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga85a685c9623a84a5c924762963c635b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group01.html#ga85a685c9623a84a5c924762963c635b3">PCF::write</a> (uint8_t value)</td></tr>
 <tr class="memdesc:ga85a685c9623a84a5c924762963c635b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a value to a given register.  <a href="group__group01.html#ga85a685c9623a84a5c924762963c635b3">More...</a><br /></td></tr>
 <tr class="separator:ga85a685c9623a84a5c924762963c635b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaca2dae7a91c98c4b9bb009709dd1179f"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group01.html#gaca2dae7a91c98c4b9bb009709dd1179f">PCF::digitalRead</a> (uint8_t port)</td></tr>
+<tr class="memdesc:gaca2dae7a91c98c4b9bb009709dd1179f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a given port content (HIGH or LOW)  <a href="group__group01.html#gaca2dae7a91c98c4b9bb009709dd1179f">More...</a><br /></td></tr>
+<tr class="separator:gaca2dae7a91c98c4b9bb009709dd1179f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>It is a Library to control the PCF8574 device. </p>
@@ -121,6 +127,36 @@ Functions</h2></td></tr>
 <dl class="section date"><dt>Date</dt><dd>2021-01-20 </dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2021 Ricardo Lima CarattiRicardo Lima Caratti </dd></dl>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="gaed902e8d7d43de9eab1cc71a0b71f7f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaed902e8d7d43de9eab1cc71a0b71f7f8">&#9670;&nbsp;</a></span>error()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PCF::error </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the last wrire or read status. </p>
+<p>Return false when the last read or write operation is not ok </p><dl class="section return"><dt>Returns</dt><dd>true or false </dd></dl>
+
+<p class="reference">References <a class="el" href="class_p_c_f.html#a19d16c732925c53756c73768ff816d48">PCF::io_error</a>.</p>
+
+</div>
+</div>
 <a id="gabb38aa941e8b607557fa8f3f98bf9fc5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gabb38aa941e8b607557fa8f3f98bf9fc5">&#9670;&nbsp;</a></span>lookForDevice()</h2>
 
@@ -217,6 +253,33 @@ Functions</h2></td></tr>
 </dl>
 
 <p class="reference">References <a class="el" href="class_p_c_f.html#a19d16c732925c53756c73768ff816d48">PCF::io_error</a>.</p>
+
+</div>
+</div>
+<a id="gaca2dae7a91c98c4b9bb009709dd1179f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaca2dae7a91c98c4b9bb009709dd1179f">&#9670;&nbsp;</a></span>digitalRead()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t PCF::digitalRead </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>port</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reads a given port content (HIGH or LOW) </p>
+<p>Returns the value or the bit in a given pin (port) </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">port</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>uint8_t </dd></dl>
 
 </div>
 </div>

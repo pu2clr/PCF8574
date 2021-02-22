@@ -128,7 +128,7 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
       sec-mem-kind = 'function';
-      sec-mem-id   = 'class_p_c_f_1aca2dae7a91c98c4b9bb009709dd1179f';
+      sec-mem-id   = 'group__group01_1gaca2dae7a91c98c4b9bb009709dd1179f';
       sec-mem-virt = normal;
       sec-mem-prot = public;
       sec-mem-type = <<_EnD_oF_dEf_TeXt_
@@ -186,7 +186,7 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
       sec-mem-kind = 'function';
-      sec-mem-id   = 'class_p_c_f_1aed902e8d7d43de9eab1cc71a0b71f7f8';
+      sec-mem-id   = 'group__group01_1gaed902e8d7d43de9eab1cc71a0b71f7f8';
       sec-mem-virt = normal;
       sec-mem-prot = public;
       sec-mem-type = <<_EnD_oF_dEf_TeXt_
@@ -194,7 +194,7 @@ bool
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'error';
       sec-mem-desc-file = '/Users/rcaratti/Desenvolvimento/eu/Arduino/PU2CLR_PCF8574T/PCF8574/pu2clr_pcf8574.h';
-      sec-mem-desc-line = '52';
+      sec-mem-desc-line = '53';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Returns the last wrire or read status.
 _EnD_oF_dEf_TeXt_;
@@ -274,8 +274,8 @@ _EnD_oF_dEf_TeXt_;
 
 _EnD_oF_dEf_TeXt_;
       sec-mem-referencedby = {
-        sec-mem-ref-id = 'pu2clr__pcf8574_8h_1aed902e8d7d43de9eab1cc71a0b71f7f8';
-        sec-mem-ref-line = '52';
+        sec-mem-ref-id = 'pu2clr__pcf8574_8h_1gaed902e8d7d43de9eab1cc71a0b71f7f8';
+        sec-mem-ref-line = '53';
         sec-mem-ref-name = 'error';
     };
       sec-mem-referencedby = {

@@ -121,28 +121,32 @@ Do you need some old version (release) of this library?  If yes, [check here](ht
 | ![DIP16](extras/images/pcf8574_01_DIP16.png)| ![SOP16](extras/images/pcf8574_02_SO16.png) | ![SSOP20](extras/images/pcf8574_03_SSOP20.png) | 
 
 
+### The table below shows the pin descriptions used by DIP16, SO16 and SSOP20
+
+
 |Pin Label | pin number (DIP16/SO16) | pin number (SSOP20) | Description |
 |----------|-------------------------|---------------------|-------------|
-|A0| 1| 6| I2C address setup |
-|A1| 2| 7| I2C address setup |
-|A2| 3| 9| I2C address setup |
-|P0| 4| 10| bidirectional I/O |
-|P1| 5| 11| bidirectional I/O |
-|P2| 6| 12| bidirectional I/O |
-|P3| 7| 14| bidirectional I/O |
-|GND| 8 15| ground |
-|P4| 9| 16| bidirectional I/O |
-|P5| 10| 17| bidirectional I/O |
-|P6| 11| 19| bidirectional I/O |
-|P7| 12| 20| bidirectional I/O |
+|A0| 1| 6| (*1) I2C address setup |
+|A1| 2| 7| (*1) I2C address setup |
+|A2| 3| 9| (*1) I2C address setup |
+|P0| 4| 10| (*2) bidirectional I/O |
+|P1| 5| 11| (*2) bidirectional I/O |
+|P2| 6| 12| (*2) bidirectional I/O |
+|P3| 7| 14| (*2) bidirectional I/O |
+|GND| 8 | 15| ground |
+|P4| 9| 16| (*2) bidirectional I/O |
+|P5| 10| 17| (*2) bidirectional I/O |
+|P6| 11| 19| (*2) bidirectional I/O |
+|P7| 12| 20| (*2) bidirectional I/O |
 |INT| 13| 1| interrupt output (active LOW) |
 |SCL| 14| 2| I2C serial clock |
 |SDA| 15| 4| I2C serial data |
 |VDD| 16| 5| +VCC - supply voltage |
 |NC | 3,8,13,18| not connected |
 
-* Source: MXP Semiconductors - PCF8574; PCF8574A -Remote 8-bit I/O expander for I2C-bus with interrupt
-Rev. 5 — 27 May 2013
+* (*1) - You have 3 pins to configure the I2C bus address. All pins connected to ground will give you 0x20 + 000 = 0x20; All pins connected to the +VCC will give you 0x20 + 7 = 0x27; You can choose any address from 0x20 to 0x27 by connecting A0, A1 and A2 to +VCC or GND.
+* (*2) - The PCF8574 family devices consist of eight quasi-bidirectional ports. Check this concept on [NXP Semiconductors datasheet - PCF8574; PCF8574A - Remote 8-bit I/O expander for I2C-bus with interrupt](https://www.nxp.com/docs/en/data-sheet/PCF8574_PCF8574A.pdf) for more details.
+
 
 
 ## Basic schematic

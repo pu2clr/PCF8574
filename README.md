@@ -118,7 +118,10 @@ Do you need some old version (release) of this library?  If yes, [check here](ht
 
 | DIP16 |  SO16 | SSOP20 | 
 | ----- | ----- | ------ | 
-! [DIP16]()| [SOP16]() | [SSOP20]() | 
+| ![DIP16](extras/images/pcf8574_01_DIP16.png)| ![SOP16](extras/images/pcf8574_02_SO16.png) | ![SSOP20](extras/images/pcf8574_03_SSOP20.png) | 
+
+
+
 
 
 ## Basic schematic

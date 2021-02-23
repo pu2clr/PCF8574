@@ -112,6 +112,15 @@ Do you need some old version (release) of this library?  If yes, [check here](ht
 * [PU2CLR SI470X Arduino Library](https://pu2clr.github.io/SI470X/). It is a Silicon Labs device family that integrates the complete functionalities for FM receivers, including RDS (Si4703).
 * [PU2CLR MCP23008](https://pu2clr.github.io/MCP23008/). It is an Arduino Library to control the MCP23008 8-Bit I/O Expander. The MCP23008 device provides 8-bit, general purpose, parallel I/O expansion. It can be controlled via I2C bus applications. It is a great and inexpensive device that allow you to add more devices to be controlled by your Arduino board via I2C protocol.
 
+
+## PCF8574 pinout 
+
+
+| DIP16 |  SO16 | SSOP20 | 
+| ----- | ----- | ------ | 
+! [DIP16]()| [SOP16]() | [SSOP20]() | 
+
+
 ## Basic schematic
 
 The image below shows a basic PCF8574 application with LEDs and Buttons. You can control up to 8 LEDs or 8 buttons or a mix of them with this device. The I²C bus address is set to 0x20. You can select another I²C address by dealing with the A0,A1 and A2 pins (from 0x20 to 0x27). This circuit uses two LEDs connected to the ports P0 and P1 and the buttons connected to the port P4 to P7. All examples sketch use this setup. 

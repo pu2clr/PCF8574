@@ -139,6 +139,10 @@ The image below shows a basic PCF8574 application with LEDs and Buttons. You can
 
 ![PCF8574 Arduino setup and circuit](extras/images/basic_schematic.png)
 
+<BR> 
+
+__You may need to use external pull up or pull down resistors when you are using the ports as input to avoid unwanted voltage floating.__   
+
 
 ## Prototype 
 

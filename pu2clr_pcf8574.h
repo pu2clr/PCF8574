@@ -45,11 +45,23 @@ public:
    void digitalWrite(uint8_t port, uint8_t value);
 
    /**
-    * @ingroup group01
+    * @ingroup group02
     * @brief Returns the last wrire or read status
     * @details Return false when the last read or write operation is not ok 
     * @return true or false
     */
    inline bool error(){return this->io_error;};
+
+   /**
+     * @ingroup group01 
+     * @brief Sets I2C bus to a given frequency
+     * @details 50000 = 50kHz; 100000 = 100kHz;  etc 
+     * @details Plese check the property I2C bus frequency/speed of your board
+     */
+   inline void setClock(long freq)
+   {  
+      Wire.setClock(freq);
+   };
+
 };
 

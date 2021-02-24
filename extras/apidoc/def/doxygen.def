@@ -73,7 +73,7 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
       sec-mem-kind = 'function';
-      sec-mem-id   = 'group__group01_1ga85a685c9623a84a5c924762963c635b3';
+      sec-mem-id   = 'group__group02_1ga85a685c9623a84a5c924762963c635b3';
       sec-mem-virt = normal;
       sec-mem-prot = public;
       sec-mem-type = <<_EnD_oF_dEf_TeXt_
@@ -104,7 +104,7 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
       sec-mem-kind = 'function';
-      sec-mem-id   = 'group__group01_1gacce5891bfdce19944b7b0859e5e739ba';
+      sec-mem-id   = 'group__group02_1gacce5891bfdce19944b7b0859e5e739ba';
       sec-mem-virt = normal;
       sec-mem-prot = public;
       sec-mem-type = <<_EnD_oF_dEf_TeXt_
@@ -128,7 +128,7 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
       sec-mem-kind = 'function';
-      sec-mem-id   = 'group__group01_1gaca2dae7a91c98c4b9bb009709dd1179f';
+      sec-mem-id   = 'group__group02_1gaca2dae7a91c98c4b9bb009709dd1179f';
       sec-mem-virt = normal;
       sec-mem-prot = public;
       sec-mem-type = <<_EnD_oF_dEf_TeXt_
@@ -154,7 +154,7 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
       sec-mem-kind = 'function';
-      sec-mem-id   = 'group__group01_1gaaaad79a637bf70a5a8cb60ca457c9e82';
+      sec-mem-id   = 'group__group02_1gaaaad79a637bf70a5a8cb60ca457c9e82';
       sec-mem-virt = normal;
       sec-mem-prot = public;
       sec-mem-type = <<_EnD_oF_dEf_TeXt_
@@ -186,7 +186,7 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
       sec-mem-kind = 'function';
-      sec-mem-id   = 'group__group01_1gaed902e8d7d43de9eab1cc71a0b71f7f8';
+      sec-mem-id   = 'group__group02_1gaed902e8d7d43de9eab1cc71a0b71f7f8';
       sec-mem-virt = normal;
       sec-mem-prot = public;
       sec-mem-type = <<_EnD_oF_dEf_TeXt_
@@ -207,6 +207,33 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-ref-line = '36';
         sec-mem-ref-name = 'io_error';
     };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'group__group01_1ga37e81b82768ffbf521605b0435d2dd03';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'setClock';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+long
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'freq';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/Users/rcaratti/Desenvolvimento/eu/Arduino/PU2CLR_PCF8574T/PCF8574/pu2clr_pcf8574.h';
+      sec-mem-desc-line = '61';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Sets I2C bus to a given frequency.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+50000 = 50kHz; 100000 = 100kHz;  etc 
+
+
+Plese check the property I2C bus frequency/speed of your board
+_EnD_oF_dEf_TeXt_;
     }; /* sec-member */
   }; /* cp-section */
   cp-section = {
@@ -280,12 +307,12 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'pu2clr__pcf8574_8cpp_1gacce5891bfdce19944b7b0859e5e739ba';
-        sec-mem-ref-line = '62';
+        sec-mem-ref-line = '64';
         sec-mem-ref-name = 'read';
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = 'pu2clr__pcf8574_8cpp_1ga85a685c9623a84a5c924762963c635b3';
-        sec-mem-ref-line = '76';
+        sec-mem-ref-line = '78';
         sec-mem-ref-name = 'write';
     };
     }; /* sec-member */

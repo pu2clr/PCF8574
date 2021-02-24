@@ -17,7 +17,7 @@
 
 #include <Wire.h>
 
-/** @defgroup group01 PCF8574 functions */
+/** @defgroup group01 PCF8574 basic functions */
 
 /**
  * @ingroup group01
@@ -53,8 +53,10 @@ void PCF::setup(uint8_t i2c)
     this->i2c_address = i2c;
 }
 
+/** @defgroup group02 PCF8574 input/output functions */
+
 /**
- * @ingroup group01
+ * @ingroup group02
  * @brief Gets the corrent register information. 
  * @details Gets the current register content. 
  * @return uint8_t current gpio value
@@ -68,7 +70,7 @@ uint8_t PCF::read()
 }
 
 /**
- * @ingroup group01
+ * @ingroup group02
  * @brief Sets a value to a given register
  * @details Sets a given 8 bit value to a given register.  
  * @param value value (8 bits)
@@ -84,7 +86,7 @@ void PCF::write(uint8_t value)
 }
 
 /**
- * @ingroup group01
+ * @ingroup group02
  * @brief Reads a given port content (HIGH or LOW)
  * @details Returns the value or the bit in a given pin (port)
  * @param port 
@@ -95,7 +97,7 @@ uint8_t PCF::digitalRead(uint8_t port) {
 }
 
 /**
- * @ingroup group01
+ * @ingroup group02
  * @brief Writes HIGH or LOW in a given port (pin)
  * @details Turns a given port High or LOW
  * @param port 

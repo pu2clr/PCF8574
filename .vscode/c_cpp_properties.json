@@ -3,14 +3,14 @@
         {
             "name": "Mac",
             "includePath": [
+                "/Users/rcaratti/Library/Arduino15/packages/esp8266/tools/**",
+                "/Users/rcaratti/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/**",
                 "/Users/rcaratti/Library/Arduino15/packages/arduino/tools/**",
                 "/Users/rcaratti/Documents/Arduino/libraries/**",
                 "/Applications/Arduino.app/Contents/Java/libraries/**",
                 "/Users/rcaratti/Library/Arduino15/packages/arduino/hardware/avr/1.8.3/**"
             ],
-            "forcedInclude": [
-                "/Users/rcaratti/Library/Arduino15/packages/arduino/hardware/avr/1.8.3/cores/arduino/Arduino.h"
-            ],
+            "forcedInclude": [],
             "defines": [
                 "USBCON"
             ],

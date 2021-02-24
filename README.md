@@ -157,7 +157,8 @@ You can use it to deal with Arduino interrupts.
 ## References 
 
 * [NXP Semiconductors datasheet - PCF8574; PCF8574A - Remote 8-bit I/O expander for I2C-bus with interrupt](https://www.nxp.com/docs/en/data-sheet/PCF8574_PCF8574A.pdf)
-* 
+* [Expand Arduino’s IO | Interfacing PCF8574 with Arduino](https://www.electronicshub.org/interfacing-pcf8574-with-arduino/)
+  
   
 
 

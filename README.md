@@ -65,22 +65,7 @@ You can install this library on your Arduino environment using different methods
 
 This is the easiest method to install this library.
 
-On Arduino IDE, select the __"Manager Libraries..."__ iten and look for PCF8574. Finally select "PU2CLR PCF8574". The images below show the installation process. 
-
-
-#### Going to Manager libraries...
-
-![Basic Schematic with LEDs](extras/images/install_lib_01.png)
-
-
-#### Looking for PCF8574
-
-
-
-#### Checking the PU2CLR_PCF8574 examples
-
-
-
+On Arduino IDE, select the __"Manager Libraries..."__ item and look for PCF8574. Finally select "PU2CLR PCF8574". 
 
 #### More information
 
@@ -110,7 +95,7 @@ Do you need some old version (release) of this library?  If yes, [check here](ht
 * [PU2CLR BK108X](https://pu2clr.github.io/BK108X/). The BK1086 and BK1088 are DSP receivers from BAKEN. The BK1088 is a BROADCAST FM and AM (LW, MW and ) RECEIVER and BK1086 is a subset of the BK1088 (it does not have LW and SW acording to the Datasheet).
 * [PU2CLR RDA5807 Arduino Library](https://pu2clr.github.io/RDA5807/). The RDA5807 is a FM DSP integrated circuit receiver (50 to 115MHz) with low noise amplifier support. This device requires very few external components if compared with other similar devices. It also supports RDS/RBDS functionalities, direct auto gain control (AGC) and real time adaptive noise cancellation function.
 * [PU2CLR SI470X Arduino Library](https://pu2clr.github.io/SI470X/). It is a Silicon Labs device family that integrates the complete functionalities for FM receivers, including RDS (Si4703).
-* [PU2CLR MCP23008](https://pu2clr.github.io/MCP23008/). It is an Arduino Library to control the MCP23008 8-Bit I/O Expander. The MCP23008 device provides 8-bit, general purpose, parallel I/O expansion. It can be controlled via I2C bus applications. It is a great and inexpensive device that allow you to add more devices to be controlled by your Arduino board via I2C protocol.
+* [PU2CLR MCP23008 Arduino Library](https://pu2clr.github.io/MCP23008/). It is an Arduino Library to control the MCP23008 8-Bit I/O Expander. The MCP23008 device provides 8-bit, general purpose, parallel I/O expansion. It can be controlled via I2C bus applications. It is a great and inexpensive device that allow you to add more devices to be controlled by your Arduino board via I2C protocol.
 
 
 ## PCF8574 pinout 
@@ -148,7 +133,6 @@ Do you need some old version (release) of this library?  If yes, [check here](ht
 * (*2) - The PCF8574 family devices consist of eight quasi-bidirectional ports. Check this concept on [NXP Semiconductors datasheet - PCF8574; PCF8574A - Remote 8-bit I/O expander for I2C-bus with interrupt](https://www.nxp.com/docs/en/data-sheet/PCF8574_PCF8574A.pdf) for more details.
 
 
-
 ## Basic schematic
 
 The image below shows a basic PCF8574 application with LEDs and Buttons. You can control up to 8 LEDs or 8 buttons or a mix of them with this device. The I²C bus address is set to 0x20. You can select another I²C address by dealing with the A0,A1 and A2 pins (from 0x20 to 0x27). This circuit uses two LEDs connected to the ports P0 and P1 and the buttons connected to the port P4 to P7. All examples sketch use this setup. 
@@ -170,10 +154,10 @@ You can use it to deal with Arduino interrupts.
 
 
 
-
 ## References 
 
 * [NXP Semiconductors datasheet - PCF8574; PCF8574A - Remote 8-bit I/O expander for I2C-bus with interrupt](https://www.nxp.com/docs/en/data-sheet/PCF8574_PCF8574A.pdf)
+* 
   
 
 

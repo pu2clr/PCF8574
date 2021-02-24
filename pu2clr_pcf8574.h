@@ -14,6 +14,7 @@
  */
 
 #include <Arduino.h>
+#include <Wire.h> 
 
 #define DEFAULT_I2C_ADDRESS 0x20 // Default I2C Address
 

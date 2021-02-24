@@ -71,10 +71,11 @@ void loop()
       if ( pcf.digitalRead(i) == LOW ) {
         Serial.print(" - the port LOW is ");
         Serial.println(i);
+        Serial.println(pcf.read(),BIN);
         break;
       }
     }
-    
+    // pcf.write(0B11111111); // Do it if you are not using pull up resistors on P0~P7.
     pcf_event = false; // Cleans the interrupt status
   }
 }

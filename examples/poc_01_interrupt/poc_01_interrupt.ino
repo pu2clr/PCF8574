@@ -48,7 +48,7 @@ void setup()
     pinMode(ARDUINO_INTERRUPT_PIN, INPUT_PULLUP); // Set Arduino internal pull up resistor to ARDUINO_INTERRUPT_PIN
     attachInterrupt(digitalPinToInterrupt(ARDUINO_INTERRUPT_PIN), checkInterrupt, FALLING); // Will call checkInterrupt when PCF8574 INT pin is LOW
 
-    Serial.print("\nStarting");
+    Serial.print("\nStarting. \nPress the buttons (P04~P07) and check the LEDs blinking time\n");
 }
 
 /**
@@ -63,13 +63,13 @@ void checkInterrupt()
 }
 
 void blinkLED(int delay_value) {
-  for ( int i = 0; i < 3; i ++ ) {
+  for ( int i = 0; i < 2; i ++ ) {
     pcf.digitalWrite(0,LOW);
-    delay(delay_value);
+    delay(delay_value / 2);
     pcf.digitalWrite(0,HIGH);
     delay(delay_value);
     pcf.digitalWrite(1,LOW);
-    delay(delay_value);
+    delay(delay_value / 2);
     pcf.digitalWrite(1,HIGH);   
     delay(delay_value); 
   }

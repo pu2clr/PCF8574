@@ -1,12 +1,25 @@
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
 PCF	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
 lookForDevice KEYWORD2
 setClock KEYWORD2
 reset KEYWORD2
 setup KEYWORD2
-write KEYWORD2
-read KEYWORD2
+write KEYWORD1
+read KEYWORD1
 digitalRead	KEYWORD2
 digitalWrite KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
 
 DEFAULT_I2C_ADDRESS LITERAL1
 PCF_GPIO0 LITERAL1

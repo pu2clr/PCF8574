@@ -11,6 +11,14 @@ This Arduino implements the most important functions available on PCF8574 device
 
 [Copyright (c) 2021 Ricardo Lima Caratti](https://pu2clr.github.io/PCF8574/#mit-license). 
 
+
+## Donate 
+
+[If you find this project useful, consider making a donation so that the author of this library can purchase components and modules for improvements and testing of this library. Click here to donate.](https://www.paypal.com/donate/?business=LLV4PHKTXC4JW&no_recurring=0&item_name=Consider+making+a+donation.++So+I+can+purchase+components+and+modules+for+improvements+and+testing+of+this+library.&currency_code=USD)
+
+
+
+
 ## Contents
 
 1. [License Copyright](https://pu2clr.github.io/PCF8574/#mit-license)
